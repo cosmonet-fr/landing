@@ -22,7 +22,7 @@
         $headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire
         $headers .= 'Cc: '.$copie."\n"; // Copie Cc
         $headers .= 'Bcc: '.$copie_cachee."\n\n"; // Copie cachée Bcc        
-        $message = 'Mon text '.$_POST["nom"].' '. $_POST["prenom"].' '.$_POST["email"];
+        $message = 'Mon text '.$_POST["nom"].' '. $_POST["prenom"].' '.$_POST["email"].' '.$_POST["tel"].' '.$_POST["entreprise"].'.';
         if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
         {
             echo 'Votre message a bien été envoyé ';

@@ -13,16 +13,32 @@
 
         <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
 
-        <label for="nom">Quel est votre nom ?</label>
-        <input type="text" name="nom" id="nom" />
+        <p>
+            <label for="nom">Quel est votre nom ?*</label>
+            <input type="text" name="nom" id="nom" required />
+        </p>
+        <p>
+            <label for="prenom">Quel est votre prénom ?*</label>
+            <input type="text" name="prenom" id="prenom" required />
+        </p>
+        <p>
+            <label for="email">Quel est votre e-mail ?*</label>
+            <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+            <label for="tel">Quel est votre numéro de téléphone ?*</label>
+            <input type="tel" name="tel" id="tel" required />
+        </p>
+        <p>
+            <label for="entreprise">Quel est votre entreprise ?</label>
+            <input type="text" name="entreprise" id="entreprise" />
+        </p>
+        <p>
+            <input type="checkbox" name="consentement" id="consentement" required />
+            <label for="consentement">Cochez cette case pour accepter de vendre votre âme au diable.*</label>
+        </p>
 
-        <label for="prenom">Quel est votre prénom ?</label>
-        <input type="text" name="prenom" id="prenom" />
-
-        <label for="email">Quel est votre e-mail ?</label>
-        <input type="email" name="email" id="email" />
-
-        <input type="submit" value="Envoyer" />
+        <input type="submit" value="Envoyer et télécharger le document" />
     </form>
 
 </body>
